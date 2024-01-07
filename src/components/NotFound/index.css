@@ -1,0 +1,24 @@
+.notFoundPic {
+  height: 400px;
+  width: 400px;
+  padding: 10px;
+}
+.notFoundHead {
+  font-size: 25px;
+  font-family: 'Roboto';
+  color: #ffffff;
+}
+.notFoundPara {
+  font-size: 18px;
+  font-family: 'Roboto';
+  color: #5a7184;
+}
+.notFoundContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #152850;
+  height: 100vh;
+  padding: 10px;
+}
