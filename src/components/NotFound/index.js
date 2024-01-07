@@ -8,7 +8,9 @@ const NotFound = () => (
       className="notFoundPic"
     />
     <h1 className="notFoundHead">Page Not Found!</h1>
-    <p className="notFoundPara">We are Sorry,Page Not Found!</p>
+    <p className="notFoundPara">
+      We are sorry, the page you requested could not be found
+    </p>
   </div>
 )
 export default NotFound
