@@ -24,7 +24,6 @@ class Login extends Component {
     event.preventDefault()
     const {userName, userPin} = this.state
     const userDetails = {user_id: userName, pin: userPin}
-    console.log(userDetails)
     const Url = 'https://apis.ccbp.in/ebank/login'
     const options = {
       method: 'POST',
@@ -32,7 +31,6 @@ class Login extends Component {
     }
 
     const response = await fetch(Url, options)
-    console.log(response)
     const data = await response.json()
     console.log(data)
     if (response.ok === true) {
