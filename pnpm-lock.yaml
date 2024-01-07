@@ -14,8 +14,10 @@ specifiers:
   husky: 4.3.8
   jest-styled-components: 7.0.5
   js-cookie: 3.0.1
+  latest: 0.2.0
   lint-staged: 10.5.4
   msw: 0.35.0
+  n: 9.2.0
   npm-run-all: 4.1.5
   prettier: 2.2.1
   react: 17.0.1
@@ -33,7 +35,9 @@ dependencies:
   history: 5.0.1
   jest-styled-components: 7.0.5_styled-components@5.3.0
   js-cookie: 3.0.1
+  latest: 0.2.0
   msw: 0.35.0
+  n: 9.2.0
   react: 17.0.1
   react-dom: 17.0.1_react@17.0.1
   react-router-dom: 5.3.0_react@17.0.1
@@ -9196,6 +9200,13 @@ packages:
       webpack-sources: 1.4.3
     dev: true
 
+  /latest/0.2.0:
+    resolution: {integrity: sha512-nsIM/FjwLcsKZ1KDAw5CivnM26zzMs3zGBL4SdjYXHI5tMcOWjGhFDMBKIum4WNAkZmeVw7zU1jR2H2UiKoQVA==}
+    hasBin: true
+    dependencies:
+      npm: 2.15.12
+    dev: false
+
   /leven/3.1.0:
     resolution: {integrity: sha512-qsda+H8jTaUaN/x5vzW2rzc+8Rw4TAQ/4KjB46IwK5VH+IlVeeeje/EoZRpiXvIqjFgK84QffqPztGI3VBLG1A==}
     engines: {node: '>=6'}
@@ -9791,6 +9802,12 @@ packages:
     resolution: {integrity: sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==}
     dev: false
 
+  /n/9.2.0:
+    resolution: {integrity: sha512-R8mFN2OWwNVc+r1f9fDzcT34DnDwUIHskrpTesZ6SdluaXBBnRtTu5tlfaSPloBi1Z/eGJoPO9nhyawWPad5UQ==}
+    os: ['!win32']
+    hasBin: true
+    dev: false
+
   /nan/2.18.0:
     resolution: {integrity: sha512-W7tfG7vMOGtD30sHoZSSc/JVYiyDPEyQVso/Zz+/uQd0B0L46gtC+pHha5FFMRpil6fm/AoEcRWyOVi4+E/f8w==}
     requiresBuild: true
@@ -9997,6 +10014,83 @@ packages:
     dependencies:
       path-key: 3.1.1
     dev: true
+
+  /npm/2.15.12:
+    resolution: {integrity: sha512-WMoAJ518W0vHjWy1abYnTeyG9YQpSoYGPxAx7d0C0L7U7Jo44bZsrvTjccmDohCJGxpasdKfqsKsl6o/RUPx6A==}
+    hasBin: true
+    dev: false
+    bundledDependencies:
+      - abbrev
+      - ansi
+      - ansi-regex
+      - ansicolors
+      - ansistyles
+      - archy
+      - async-some
+      - block-stream
+      - char-spinner
+      - chmodr
+      - chownr
+      - cmd-shim
+      - columnify
+      - config-chain
+      - dezalgo
+      - editor
+      - fs-vacuum
+      - fs-write-stream-atomic
+      - fstream
+      - fstream-npm
+      - github-url-from-git
+      - github-url-from-username-repo
+      - glob
+      - graceful-fs
+      - hosted-git-info
+      - imurmurhash
+      - inflight
+      - inherits
+      - ini
+      - init-package-json
+      - lockfile
+      - lru-cache
+      - minimatch
+      - mkdirp
+      - node-gyp
+      - nopt
+      - normalize-git-url
+      - normalize-package-data
+      - npm-cache-filename
+      - npm-install-checks
+      - npm-package-arg
+      - npm-registry-client
+      - npm-user-validate
+      - npmlog
+      - once
+      - opener
+      - osenv
+      - path-is-inside
+      - read
+      - read-installed
+      - read-package-json
+      - readable-stream
+      - realize-package-specifier
+      - request
+      - retry
+      - rimraf
+      - semver
+      - sha
+      - slide
+      - sorted-object
+      - spdx-license-ids
+      - strip-ansi
+      - tar
+      - text-table
+      - uid-number
+      - umask
+      - validate-npm-package-license
+      - validate-npm-package-name
+      - which
+      - wrappy
+      - write-file-atomic
 
   /nth-check/1.0.2:
     resolution: {integrity: sha512-WeBOdju8SnzPN5vTUJYxYUxLeXpCaVP5i5e0LF8fg7WORF2Wd7wFX/pk0tYZk7s8T+J7VLy0Da6J1+wCT0AtHg==}
