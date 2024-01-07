@@ -23,14 +23,16 @@ class Login extends Component {
   submitForm = async event => {
     event.preventDefault()
     const {userName, userPin} = this.state
-    const userDetails = {user_id: userId, pin}
+    const userDetails = {user_id: userName, pin: userPin}
+    console.log(userDetails)
     const Url = 'https://apis.ccbp.in/ebank/login'
     const options = {
       method: 'POST',
-      body: JSON.stringify(UserDetails),
+      body: JSON.stringify(userDetails),
     }
 
     const response = await fetch(Url, options)
+    console.log(response)
     const data = await response.json()
     console.log(data)
     if (response.ok === true) {
@@ -108,7 +110,7 @@ class Login extends Component {
               <button type="submit" className="login">
                 Login
               </button>
-              {onShowMsg && <p>*{errorMsg}</p>}
+              {onShowMsg && <p className="errorMessage">{errorMsg}</p>}
             </form>
           </div>
         </div>
